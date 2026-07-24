@@ -1,0 +1,15 @@
+{
+	"name": "naruadf",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3fc89ead-eae6-4d41-91f4-c62951d44c8a",
+		"tenantId": "736b279b-2928-407e-b687-66f75e685ac5"
+	}
+}
