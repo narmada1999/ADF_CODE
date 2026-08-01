@@ -1,0 +1,12 @@
+{
+	"name": "StorageDataLake",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://storageforprojectnarmada.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEQxM0M3RUU0LTU5QUQtNEQwNC1BMjc5LUY4RDgwQzE2Nzg3QV9jNWU0NTM3OS1iNDM3LTQ1MTYtODA5Ni00NDg0MDBjOWE3NWMiDQp9"
+		}
+	}
+}

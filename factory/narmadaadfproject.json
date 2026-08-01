@@ -1,0 +1,15 @@
+{
+	"name": "narmadaadfproject",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "44882c80-1c3e-41fc-b693-aadebd6fdb7f",
+		"tenantId": "736b279b-2928-407e-b687-66f75e685ac5"
+	}
+}

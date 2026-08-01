@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copycsv",
+				"name": "Git_to_Bronze",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -26,12 +26,14 @@
 						}
 					},
 					"sink": {
-						"type": "ParquetSink",
+						"type": "DelimitedTextSink",
 						"storeSettings": {
 							"type": "AzureBlobFSWriteSettings"
 						},
 						"formatSettings": {
-							"type": "ParquetWriteSettings"
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
 						}
 					},
 					"enableStaging": false,
@@ -46,20 +48,20 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "git_input",
+						"referenceName": "ds_http",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "gi_output",
+						"referenceName": "ds_ram",
 						"type": "DatasetReference"
 					}
 				]
 			}
 		],
 		"annotations": [],
-		"lastPublishTime": "2026-07-24T15:54:45Z"
+		"lastPublishTime": "2026-07-31T21:19:48Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }
